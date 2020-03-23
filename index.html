@@ -1,291 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<meta charset="UTF-8">
-	<title>Gènavant</title>
-	<meta name="description" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
-	<link rel="stylesheet" href="css/main.css">
+  <style type="text/css">
+    body {
+      padding: 50px;
+    }
 
+    .container {
+      padding: 50px;
+      background: #f1f1f1;
+      width: 500px;
+      margin: 0px auto;
+      font-size: 19px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
 </head>
-<body class="home">
-	<header class="main-header">
-		<div class="mobile-menu">	
-			<div class="mobile-menu-inner">	
-				<ul class="mobile-menu-list">
-					<li class="drop-parent"><a><span>ABOUT Gènavant</span></a>
-						<ul class="mobile-dropdown">
-							<li><a href="about-genavant.html">Brand Story</a></li>
-							<li><a href="about-story.html">Designer Story</a></li>
-							<li><a href="about-craftmanship.html">Craftmanship</a></li>
-						</ul>
-					</li>
-					<li><a href="collection.html">collection</a>
-					</li>
-					<li class="drop-parent"><a><span>news &amp; events</span></a>
-						<ul class="mobile-dropdown">
-							<li><a href="news.html">Latest News</a></li>
-							<li><a href="events.html">Upcoming Events</a></li>
-						</ul>
-					</li>
-					<li><a href="contact.html">contact us</a>
-					</li>
-				</ul>
-				<div class="mobile-menu-text">
-					<span class="mobile-menu-location">+39 02 367 409 12, 560 Mission St, <br>	
-					San Francisco CA 94105, USA</span>
-					
-					<span>&copy; 2018  Genavant — All rights reserved.</span>
-				</div>
-			</div>
-		</div> <!-- end of mobile menu -->
-	<div class="header-container">
-		<nav class="header-nav">
-			<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
-			<div class="header-nav-inner">
-				<div class="logo">
-					<a href="index.html"><img src="images/Logo.svg" alt=""></a>
-				</div>
-				<ul class="nav-list">
-					<li class="drop-parent"><a>ABOUT Gènavant</a>
-					<ul class="dropdown">
-						<li><a href="about-genavant.html">Brand Story</a></li>
-						<li><a href="about-story.html">Designer Story</a></li>
-						<li><a href="about-craftmanship.html">Craftmanship</a></li>
-					</ul>
-					</li>
-					<li><a href="collection.html">collection</a></li>
-					<li class="drop-parent"><a>news &amp; events</a>
-						<ul class="dropdown">
-							<li><a href="news.html">Latest News</a></li>
-							<li><a href="events.html">Upcoming Events</a></li>
-						</ul>
-					</li>
-					<li><a href="contact.html">contact us</a></li>
-				</ul>
-			</div>
-			<form class="search">
-				<input type="search" placeholder="Search the keywords...">
-				<div class="search-submit"></div>
-				<ul class="search-dropdown">
-					<li><a href="#">Reggie Hung &amp; Prof. Jimmy Choo Obe...</a></li>
-					<li><a href="#">Reggie Hung</a></li>
-				</ul>
-			</form>
 
-		</nav>
-		
-	</div>
+<body>
+  <div class="container">
+    <a id="link" href="">Check out my prototype &quot;<span id="name"></span>&quot; in Soli Sandbox</a>
+  </div>
 
-</header>
-<div class="home-slider">
-	<div class="container">
-		<div class="slider-wrapper">
-			<div class="slider-inner-left">
-				<div class="slider-left-text">
-					<h2 class="slider-headline">London <br> Fashion Week <br> 2018 <a class="slider-video-btn"><img src="images/Play-button.svg" alt=""></a></h2>
-					<span class="slider-organisators">REGGIE HUNG &amp; <br> PROF. JIMMY CHOO OBE</span>
-				</div>
-			</div>
-			<div class="slider">
-				<div class="slider-item">
-					<div class="slider-item-inner">
-						<div class="slider-inner-right">
-							<img src="images/bg1.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="slider-item">
-					<div class="slider-item-inner">
-						<div class="slider-inner-right">
-							<img src="images/bg2.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div> <!-- end of slider -->
-		</div> <!-- end of slider wrapper -->
-		<div class="header-bottom-wrp">
-			<div class="header-step">
-				<div class="header-step-text">
-					<span class="header-step-brand">Gènavant</span>
-					<h6 class="header-step-next">Step To Elegance</h6>
-				</div>
-				<a href="#home-collection" class="header-rotated-text">
-					Discover
-				</a>
-			</div>
-			<div class="slider-navigations">
-				<div class="slider-buttons">
-					<div class="slider-left-button"><img src="images/Next.svg" alt=""> </div>
-					<div class="slider-right-button active"><img  src="images/Next.svg" alt=""></div>
-				</div>
-			</div>
-		</div>
-		<div class="header-rotated-text">
-			spring blossom
-		</div>
+  <script type="text/javascript">
+    const search = window.location.search;
+    const parts = search.replace(/^[?]/ig, "").split("&");
 
-	</div>
-</div>
-<div id="home-collection" class="home-collection">
-	<div class="container-sm">
-		<strong class="home-collection-title">COLLECTION</strong>
-		<div class="home-collection-top">
-			<h2 class="home-collection-name">Autumn <br> Winter 2018</h2>
-			<div class="home-collection-top-inner-wrp">
-				<div class="home-collection-top-image">
-				<span>saffron</span>
-				<img src="images/homeshoe-1.png" alt="">
-			</div>
-			<div class="home-collection-top-text">
-				<p>A dignified and serene countenance with a cheerful mood reddens the sweet time silently. Both motion and stillness follow along with every sound transmitting to lakes and rivers, while the long rhythm comes slowly and ripples smoothly.</p>
-			</div>
-			</div>
-		</div> <!-- end of home collection top -->
-	</div>
-	<div class="home-collection-md">
-		<div class="container-sm">	
-			<div class="home-collection-md-text">
-				<p>This is a pari of high heels created with the most innovative and exquisite Seiko technology using pink and white diamonds with GIA certificates. The world's only pair of diamond high heel shoes made of Royal diamond mosaic technology. Please look forward to its debut at the November 2018 International Import Expo.</p>
-				<a href="collection-list.html">View collection</a>
-			</div>
-			<div class="home-collection-md-image">	
-				<span>SPRING BLOSSOM</span>
-				<img src="images/homeshoe-2.png" alt="">
-			</div>
-		</div>
-
-	</div>
-</div>
-<div class="container-sm">	
-<div class="home-about-author">
-	<div class="about-author-image">
-		<img src="images/Choo-photo.jpg" alt="">
-	</div>
-	<div class="about-author-text">	
-		<img class="author-painting" src="images/painting.png" alt="">
-		<span class="author-name">PROF. JIMMY CHOO OBE</span>
-		<p>"Jimmy Choo", represents elegant, exquisitely crafted high heels. Professor Jimmy Choo OBE is famed for making shoes for Lady Diana, Princess of Wales. Choo's beautiful creations have adorned the feet of royalty, celebrities and pop stars. Datuk, Professor Choo, OBE is activev in his firm support for international fashioneducation and traning, as the Ambassador for Footwear Education at the London College of Fashion and as a spokesperson for the British Council in their promotion of British Education to foreign students</p>
-		<a href="about-story.html">DESIGNER STORY</a>
-	</div>
-</div>
-</div>
-
-	<div class="home-video-container">
-		<div class="home-video">
-			<div class="home-video-inner">
-				<h2 class="home-video-title">Genávant <br>	 History</h4>		
-			</div>
-			<a href="#" class="video-share"></a>
-			<div class="video-tile">
-				<div class="tile videotile1">
-					<img src="images/video-img-sample1.jpg" alt="">
-					<span class="small-video-title">Gènavant 紀娜梵 珠寶鞋 Professor Jimmy Choo x Reggie Hung</span>
-				</div>
-				<div class="tile">	</div>
-				<div class="tile">	
-					
-				</div>
-				<div class="tile videotile2">	
-				<img src="images/video-img-sample2.jpg" alt="">
-				<span class="small-video-title">Designer Jimmy Choo: 1st CIIE "definitely a huge event</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-sm">
-		<div class="home-news">	
-			<h2 class="home-news-title">
-				News &amp; <br>	Events
-			</h2>
-			<div class="mobile-tabs">
-			<span class="active latest-news-1-trigger">LATEST NEWS</span><span class="latest-news-2-trigger">UPCOMING EVENTS</span>	
-			</div>
-			<div class="latest-news-wrapper">
-				<div class="latest-news active latest-news-1">
-					<h6 class="lates-news-title">Latest news</h6>
-					<ul class="latest-news-list">
-						<li>
-							<span class="latest-news-date">	11 apr 2016</span>
-							<a href="news-detail.html" class="latest-news-text">Gems of the Silk Road by Professor Jimmy Choo, OBE</a>
-						</li>
-						<li>
-							<span class="latest-news-date">	11 apr 2016</span>
-							<a href="news-detail.html" class="latest-news-text">Gems of the Silk Road by Professor Jimmy Choo, OBE</a>
-						</li>
-					</ul>
-				</div>
-				<div class="latest-news latest-news-2">
-					<h6 class="lates-news-title">Upcoming events</h6>
-					<ul class="latest-news-list">
-						<li>
-							<span class="latest-news-date">	11 apr 2016</span>
-							<a href="news-detail.html" class="latest-news-text">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero adipisci beatae natus, ratione dolore, accusamus veritatis alias ex vel velit.</a>
-						</li>
-						<li>
-							<span class="latest-news-date">	11 apr 2016</span>
-							<a href="news-detail.html" class="latest-news-text">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti veniam totam tempore dolore explicabo ullam ad praesentium doloremque iste quo.</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer-container">	
-		<footer class="main-footer">
-			<div class="footer-text">
-				<small>&copy; 2018  Genavant — All rights reserved.</small>	
-				<ul class="footer-menu">
-					<li><a href="terms.html">TERM &amp; CONDITION</a></li>
-					<li><a href="contact.html">CONTACT US</a></li>
-				</ul>
-			</div>
-			<ul class="footer-social">
-				<li><a href="#"><img src="images/logo-facebook.svg" alt=""></a></li>
-				<li><a href="#"><img src="images/logo-instagram.svg" alt=""></a></li>
-				<li><a href="#"><img src="images/logo-twitter.svg" alt=""></a></li>
-				<li><a href="#"><img src="images/logo-flickr.svg" alt=""></a></li>
-			</ul>
-		</footer>
-	</div>
-
-	<div class="popup slider-popup">	
-		<div class="popup-overlay">	</div>
-		<div class="popup-inner">
-			<div class="popup-close"></div>	
-			<iframe class="videoPlayer" width="100%" height=100%" src="https://www.youtube.com/embed/zopE-O42Rfw?enablejsapi=1" frameborder="0" enablejsapi=1 allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</div>
-	</div>
-	<div class="popup home-video-popup">	
-		<div class="popup-overlay">	</div>
-		<div class="popup-inner">
-			<div class="popup-close"></div>	
-			<iframe class="videoPlayer2" width="100%" height=100%" src="https://www.youtube.com/embed/Iwjb42iEiHM?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</div>
-	</div>
-		<div class="popup home-video-popup-2">	
-		<div class="popup-overlay">	</div>
-		<div class="popup-inner">
-			<div class="popup-close"></div>	
-			<iframe class="videoPlayer3" width="100%" height=100%" src="https://www.youtube.com/embed/n_E7pv4gQEw?enablejsapi=1&start=181" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</div>
-
-	</div>
-		<div class="popup home-video-popup-3">	
-		<div class="popup-overlay">	</div>
-		<div class="popup-inner">
-			<div class="popup-close"></div>	
-			<iframe class="videoPlayer4" width="100%" height="100%" src="https://www.youtube.com/embed/C7nXkTmhpQ0?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</div>
-	</div>
-	<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script type="text/javascript" src="libs/slick/slick.min.js"></script>
-  <script src="js/common.js"></script>
+    for (var i = 0; i < parts.length; i++) {
+      const entry = parts[i];
+      console.log(entry);
+      if (entry.toLowerCase().startsWith("url=")) {
+        document.getElementById("link").href = decodeURIComponent(entry.substr(4));
+      } else if (entry.toLowerCase().startsWith("name=")) {
+        document.getElementById("name").innerHTML = decodeURIComponent(entry.substr(5));
+      }
+    }
+  </script>
 </body>
+
 </html>
