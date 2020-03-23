@@ -8,6 +8,7 @@
 
     .container {
       padding: 50px;
+      border: solid #eee 0.5px;
       background: #f1f1f1;
       width: 500px;
       margin: 0px auto;
@@ -32,7 +33,7 @@
       const entry = parts[i];
       console.log(entry);
       if (entry.toLowerCase().startsWith("url=")) {
-        document.getElementById("link").href = decodeURIComponent(entry.substr(4));
+        document.getElementById("link").href = "soli://project?url=" + entry.substr(4);
       } else if (entry.toLowerCase().startsWith("name=")) {
         document.getElementById("name").innerHTML = decodeURIComponent(entry.substr(5));
       }
